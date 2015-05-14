@@ -1,0 +1,355 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>FanBox Welcome</title>
+<link rel="stylesheet" href="css/foundation.css" />
+<link rel="stylesheet" href="css/typeahead.css" />
+<script src="js/vendor/modernizr.js"></script>
+</head>
+<body>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
+<script src="javascript/jqueryfile.js"></script>
+<script src="javascript/modernizr.js"></script>
+<script src="javascript/typeahead.js"></script>
+<script src="javascript/jquery1.js"></script>
+<script src="javascript/FanBoxQuiz.js"></script>
+<script>
+$(document).foundation();
+</script>
+
+<div id="genderValue" class="genderSet" style="display: none">
+</div>
+
+<div id="nameValue" class="nameSet" style="display: none">
+</div>	
+	
+<div class="row topNav" style="margin-bottom:2.0rem;margin-top:4.0rem;font-size:20px">
+<div class="columns large-4" style="margin-left:-1.5rem">
+<img src="/images/FanBoxLogo2.jpg" width="100%" />
+</div>
+<div class="columns large-2" style="margin-right:2.0rem;margin-top:4.0rem;margin-left:-1.5rem"> 
+<a href="/HowItWorks.html">How It Works</a>
+</div>
+<div class="columns large-2" style="margin-left:-1.0rem;margin-top:4.0rem;margin-left:-2.3rem">
+<a href="/FAQ.html">FAQ</a>
+</div>
+<div class="columns large-2" style="margin-left:-1.0rem;margin-top:4.0rem;margin-left:-3.8rem">
+<a href="/Reviews.html">Reviews</a >
+</div>
+<div class="columns large-2" style="margin-top:2.0rem;margin-left:-2.0rem;margin-top:4.0rem">
+<a href="/GiftCards.html">Gift Cards</a>
+</div>
+<div class="columns large-2" style="margin-top:2.0rem;margin-left:-15rem;margin-top:4.0rem">
+<a href="/WhoWeAre.html">Who We Are</a>
+</div>
+</div>
+
+<div class="row userNav panel" style="margin-bottom:2.0rem;margin-top:4.0rem;background-color:rgb(141, 211, 228);color:black;width:100%;margin-left:auto;margin-right:autp;max-width:initial">
+<div class="columns large-2" style="margin-left:27.0rem">
+<span>User: <span class="nameSet"></span></span>
+</div>
+<div class="columns large-2" style="margin-left:-12.0rem">
+<span>Credit: $0.00</span>
+</div>
+<div class="columns large-1" style="margin-left:-4.0rem">
+<a href="/" style="color:black">Home</a>
+</div>
+<div class="columns large-1" style="margin-left:-2.0rem">
+<a href="/MyAccount.html" style="color:black">Profile</a>
+</div>
+<div class="columns large-2" style="margin-left:-2.0rem">
+<a href="/Referrals.html" style="color:black">Referrals</a>
+</div>
+<div class="columns large-2" style="margin-left:-10.0rem">
+<a href="/MyAccount.html" style="color:black">Account</a>
+</div>
+<div class="columns large-2" style="margin-left:-50.0rem">
+<a href="/SignOut.html" style="color:black;margin-left:-9.0rem">Sign Out</a>
+</div>
+</div>
+
+<div class="row welcomePanelTitle">
+<div class="columns large-4">
+<h4 style="color:#008CBA">Welcome to FanBox!</h4>
+</div>
+</div>
+
+<div class="row welcomePanelBody">
+<div class="columns large-12">
+<p>Hi <span class="nameSet"></span>! We are excited to start your first Fan Box. Our Fan Quiz helps us get a sense of what your style is and what items you like. Keep in mind, the more we know about you, the better we can make your FanBox.</p>
+</div>
+</div>
+
+<div class="row quizTitle" style="margin-top:1.5rem">
+<div class="columns large-2">
+<h4>Fan Quiz</h4>
+</div>
+</div>
+
+<div class="row teamSelectorTitle" style="margin-top:1.5rem">
+<div class="columns large-4">
+<h5>Enter your favorite team's name</h5>
+</div>
+</div>
+
+<div class="row teamSelectorBox">
+<div class="columns large-4">
+<input id="typeahead" class=""ui-widget"" type="text" placeholder="Type Your Team Name">
+</div>
+</div>
+
+<div id="TeamSpecificQuizContainer">
+</div>
+
+<div id="CowboysGirlsSelectionContent" style="display: none">
+<div class="row gearDoYouLikeTitle" style="margin-top:1.5rem">
+<div class="columns large-5">
+<h5>What kind of gear do you like?</h5>
+</div>
+</div>
+<div class="row gearDoYouLikeHeaders" style="margin-top:1.5rem">
+<div class="columns large-4">
+<input id="jeanstshirt" type="checkbox"><label for="jeanstshirt">I am happiest in Jeans and a T-Shirt</label>
+</div>
+<div class="columns large-4">
+<input id="comfy" type="checkbox"><label for="comfy">I like to be comfy and cute</label>
+<span></span>
+</div>
+<div class="columns large-4">
+<input id="dressingup" type="checkbox"><label for="dressingup">I like dressing up!</label>
+</div>
+</div>
+
+<div class="row gearDoYouLikeBoxes">
+<div class="columns large-4">
+<img src="/images/FanBoxDallasCowboys1.jpg" />
+</div>
+<div class="columns large-4">
+<img src="/images/FanBoxDallasCowboys2.jpg" />
+</div>
+<div class="columns large-4">
+<img src="/images/FanBoxDallowCowboys3.jpg" />
+</div>
+</div>
+
+<div class="row" style="margin-top:2.0rem">
+<div class="large-12 columns"><h5>What kind of things are you interested in getting?</h5></div>
+</div>
+<div class="row" style="margin-top:1.5rem">
+<div class="large-4 columns"><input type="checkbox" id="tshirt"><label for="tshirt">T-Shirts</label>
+<img src="/images/FanBoxCowboysTshirt.JPG">
+</div>
+<div class="large-4 columns"><input type="checkbox" id="jersey"><label for="jersey">Jerseys</label>
+<img src="/images/FanBoxCowboysJersey.JPG">
+</div>
+<div class="large-4 columns"><input type="checkbox" id="sweatshirt"><label for="sweatshirt">Sweatshirts</label>
+<img src="/images/FanBoxCowboysSweatshirt.JPG">
+</div>
+</div>
+
+<div class="row" style="margin-top:1.5rem">
+<div class="large-4 columns"><input type="checkbox" id="hat"><label for="hat">Hats</label>
+<img src="/images/fanboxCowboysHat.JPG">
+</div>
+<div class="large-4 columns"><input type="checkbox" id="homedecor"><label for="homedecor">Home Decor</label>
+<img src="/images/fanboxcowboyshomedecor.JPG">
+</div>
+<div class="large-4 columns"><input type="checkbox" id="tailgating"><label for="tailgating">Tailgating</label>
+<img src="/images/FanBoxCowboysTailGate.JPG">
+</div>
+</div>
+</div>
+
+<div id="SteelersMensSelectionContent" style="display: none">
+<div class="row gearDoYouLikeTitle" style="margin-top:1.5rem">
+<div class="columns large-5">
+<h5>What kind of gear do you like?</h5>
+</div>
+</div>
+<div class="row gearDoYouLikeHeaders" style="margin-top:1.5rem">
+<div class="columns large-4">
+<input id="jeanstshirt" type="checkbox"><label for="jeanstshirt">I like to wear Jeans and a T-Shirt</label>
+</div>
+<div class="columns large-4">
+<input id="comfy" type="checkbox"><label for="comfy">I typically dress business casual</label>
+<span></span>
+</div>
+<div class="columns large-4">
+<input id="dressingup" type="checkbox"><label for="dressingup">I like being comfy above all else</label>
+</div>
+</div>
+
+<div class="row gearDoYouLikeBoxes">
+<div class="columns large-4">
+<img src="/images/fanboxguyssteelers.jpg" />
+</div>
+<div class="columns large-4">
+<img src="/images/fanboxSteelersPolo.jpg" />
+</div>
+<div class="columns large-4">
+<img src="/images/fanboxSteelersLounge.jpg" />
+</div>
+</div>
+
+<div class="row" style="margin-top:2.0rem">
+<div class="large-12 columns"><h5>What kind of things are you interested in getting?</h5></div>
+</div>
+
+<div class="row" style="margin-top:1.5rem">
+<div class="large-4 columns"><input type="checkbox" name="Polos" value="Polos" id="polos"><label for="polos">Polos</label></div>
+<div class="large-4 columns"><input type="checkbox" name="Jerseys" value="Jerseys" id="jerseys"><label for="jerseys">Jerseys</label></div>
+<div class="large-4 columns"><input type="checkbox" name="T-Shirts" value="T-Shirts" id="tshirts"><label for="tshirts">T-Shirts</label></div>
+</div>
+
+<div class="row">
+<div class="large-4 columns"><img src="/images/fanboxSteelersPolo.JPG"></div>
+<div class="large-4 columns"><img src="/images/fanbox_steelersjersey.JPG"></div>
+<div class="large-4 columns"><img src="/images/fanbox_steelerstshirt.JPG"></div>
+</div>
+
+<div class="row" style="margin-top:1.5rem">
+<div class="large-4 columns"><input type="checkbox" name="Hats" value="Hats" id="hats"><label for="hats">Hats</label></div>
+<div class="large-4 columns"><input type="checkbox" name="Sleepwear" value="Sleepwear" id="sleepwear"><label for="sleepwear">Sleepwear</label></div>
+<div class="large-4 columns"><input type="checkbox" name="Tailgating" value="Tailgating" id="tailgating"><label for="tailgating">Tailgating</label></div>
+</div>
+
+<div class="row">
+<div class="large-4 columns"><img src="/images/fanbox_menssteelershats.JPG" alt="some img"></div>
+<div class="large-4 columns"><img src="/images/fanboxSteelersLounge.JPG" alt="some img"></div>
+<div class="large-4 columns"><img src="/images/fanbox_steelerstailgating.JPG" alt="some img"></div>
+</div>
+</div>
+
+<div id="OtherTeamsLadiesSelectionContent" style="display: none">
+<div class="row gearDoYouLikeTitle" style="margin-top:1.5rem">
+<div class="columns large-5">
+<h5>What kind of gear do you like?</h5>
+</div>
+</div>
+<div class="row gearDoYouLikeHeaders" style="margin-top:1.5rem">
+<div class="columns large-4">
+<input id="jeanstshirt" type="checkbox"><label for="jeanstshirt">I am happiest in Jeans and a T-Shirt</label>
+</div>
+<div class="columns large-4">
+<input id="comfy" type="checkbox"><label for="comfy">I like to be comfy and cute</label>
+<span></span>
+</div>
+<div class="columns large-4">
+<input id="dressingup" type="checkbox"><label for="dressingup">I like dressing up!</label>
+</div>
+</div>
+
+<div class="row gearDoYouLikeBoxes">
+<div class="columns large-4">
+<img id="ladiesJeansTShirt" src="/images/FanBoxDallasCowboys1.jpg" />
+</div>
+<div class="columns large-4">
+<img id="ladiesComfyCute" src="/images/FanBoxDallasCowboys2.jpg" />
+</div>
+<div class="columns large-4">
+<img id="ladiesDressingUp" src="/images/FanBoxDallowCowboys3.jpg" />
+</div>
+</div>
+
+<div class="row" style="margin-top:2.0rem">
+<div class="large-12 columns"><h5>What kind of things are you interested in getting?</h5></div>
+</div>
+<div class="row" style="margin-top:1.5rem">
+<div class="large-4 columns"><input type="checkbox" id="tshirt"><label for="tshirt">T-Shirts</label>
+<img id="ladiesTShirts" src="/images/FanBoxCowboysTshirt.JPG">
+</div>
+<div class="large-4 columns"><input type="checkbox" id="jersey"><label for="jersey">Jerseys</label>
+<img id="ladiesJerseys" src="/images/FanBoxCowboysJersey.JPG">
+</div>
+<div class="large-4 columns"><input type="checkbox" id="sweatshirt"><label for="sweatshirt">Sweatshirts</label>
+<img id="ladiesSweatshirts" src="/images/FanBoxCowboysSweatshirt.JPG">
+</div>
+</div>
+
+<div class="row" style="margin-top:1.5rem">
+<div class="large-4 columns"><input type="checkbox" id="hat"><label for="hat">Hats</label>
+<img id="ladiesHats" src="/images/fanboxCowboysHat.JPG">
+</div>
+<div class="large-4 columns"><input type="checkbox" id="homedecor"><label for="homedecor">Home Decor</label>
+<img id="ladiesHomeDecor" src="/images/fanboxcowboyshomedecor.JPG">
+</div>
+<div class="large-4 columns"><input type="checkbox" id="tailgating"><label for="tailgating">Tailgating</label>
+<img id="ladiesTailgaiting" src="/images/FanBoxCowboysTailGate.JPG">
+</div>
+</div>
+</div>
+
+<div id="finalBoxSelection" class="finalBoxSelection" style="display: none;margin-top:2rem">
+<div class="row">
+<div class="large-12 columns"><h5>Are there things you prefer to avoid?</h5></div>
+</div>
+
+<div class="row">
+<div class="large-4 columns"><input type="checkbox" id="avoidtshirt"><label for="avoidtshirt">T-Shirts</label></div>
+<div class="large-4 columns"><input type="checkbox" id="avoidjersey"><label for="avoidjersey">Jerseys</label></div>
+<div class="large-4 columns"><input type="checkbox" id="avoidsweatshirt"><label for="avoidsweatshirt">Sweatshirts</label></div>
+</div>
+
+<div class="row">
+<div class="large-4 columns"><input type="checkbox" id="avoidhats"><label for="avoidhats">Hats</label></div>
+<div class="large-4 columns"><input type="checkbox" id="avoidjewelry"><label for="avoidjewelry">Jewelry</label></div>
+<div class="large-4 columns"><input type="checkbox" id="avoidpurses"><label for="avoidpurses">Purses</label></div>
+</div>
+
+<div class="row">
+<div class="large-4 columns"><input type="checkbox" id="avoidtailgating"><label for="avoidtailgating">Tailgating</label></div>
+<div class="large-4 columns"><input type="checkbox" id="avoidhomedecor"><label for="avoidhomedecor">Home Decor</label></div>
+<div class="large-4 columns"><input type="checkbox" id="avoidautoaccessores"><label for="avoidautoaccessores">Auto Accesssories</label></div>
+</div>
+
+<div class="row">
+<div class="large-4 columns"><input type="checkbox" id="avoidcollectibles"><label for="avoidcollectibles">Collectibles</label></div>
+<div class="large-4 columns"><input type="checkbox" id="avoidlawnandgarden"><label for="avoidlawnandgarden">Lawn and Garden</label></div>
+<div class="large-4 columns"><input type="checkbox" id="avoidshortsandpants"><label for="avoidshortsandpants">Shorts and Pants</label></div>
+</div>
+
+<div class="row" style="margin-top:1.5rem">
+<div class="large-12 columns"><h5>Anything you want us to know about you?</h5></div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<textarea rows="4" cols="40"></textarea>
+</div>
+</div>
+
+<div class="row" style="margin-top:1.5rem">
+<div class="large-12 columns"><h5>When do you want to get your FanBox?</h5></div>
+</div>
+
+<div class="row" style="margin-top:1.5rem">
+<div class="large-2 columns"><p>Date: <input type="text" id="datepicker"></p></div>
+</div>
+
+<div class="row">
+<div class="large-16 columns"><input type="checkbox" name="autocheck" value="autocheck" id="autosendbox"><label for="autosendbox">Please send Fan boxes automatically every time. Cancel at any time.</label></div>
+</div>
+<div class="row" style="margin-top:1.5rem">
+<div class="large-12 columns"><h5>What kind of fan are you? Choose your experience!</h5></div>
+</div>
+
+<div class="row"> 
+<div class="large-4 columns"><input type="radio" name="BoxType" value="Rookie Box $25">Rookie Box $25 
+<img src="/images/FanBoxRookieBox.png" alt="some img" style="height: 174px;"> 
+</div> 
+<div class="large-4 columns"><input type="radio" name="BoxType" value="MVP Box $60">MVP Box $60 
+<img src="/images/fanboxmvpbox.JPG" alt="some img" style="height: 270px;width: 230px;"> 
+</div> 
+<div class="large-4 columns"><input type="radio" name="BoxType" value="Hardcore Fanatic Box $125">HardCore Fanatic Box $125 
+<img src="/images/FanBoxHardcoreFanatics.png" alt="some img" style="width: 371px;"> 
+</div> 
+</div>
+
+<div class="row">
+<div class="large-12 columns"><input id="fanBoxQuizSave" type="image" src="/images/save.png" alt="Submit"/></div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>FanBox Welcome</title>
+<link rel="stylesheet" href="css/foundation.css" />
+<link rel="stylesheet" href="css/typeahead.css" />
+<script src="js/vendor/modernizr.js"></script>
+</head>
+<body>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
+<script src="javascript/jqueryfile.js"></script>
+<script src="javascript/modernizr.js"></script>
+<script src="javascript/typeahead.js"></script>
+<script src="javascript/jquery1.js"></script>
+<script src="javascript/FanBoxQuiz.js"></script>
+<script>
+$(document).foundation();
+</script>
+
+<div id="genderValue" class="genderSet" style="display: none">
+</div>
+
+<div id="nameValue" class="nameSet" style="display: none">
+</div>	
+	
+<div class="row topNav" style="margin-bottom:2.0rem;margin-top:4.0rem;font-size:20px">
+<div class="columns large-4" style="margin-left:-1.5rem">
+<img src="/images/FanBoxLogo2.jpg" width="100%" />
+</div>
+<div class="columns large-2" style="margin-right:2.0rem;margin-top:4.0rem;margin-left:-1.5rem"> 
+<a href="/HowItWorks.html">How It Works</a>
+</div>
+<div class="columns large-2" style="margin-left:-1.0rem;margin-top:4.0rem;margin-left:-2.3rem">
+<a href="/FAQ.html">FAQ</a>
+</div>
+<div class="columns large-2" style="margin-left:-1.0rem;margin-top:4.0rem;margin-left:-3.8rem">
+<a href="/Reviews.html">Reviews</a >
+</div>
+<div class="columns large-2" style="margin-top:2.0rem;margin-left:-2.0rem;margin-top:4.0rem">
+<a href="/GiftCards.html">Gift Cards</a>
+</div>
+<div class="columns large-2" style="margin-top:2.0rem;margin-left:-15rem;margin-top:4.0rem">
+<a href="/WhoWeAre.html">Who We Are</a>
+</div>
+</div>
+
+<div class="row userNav panel" style="margin-bottom:2.0rem;margin-top:4.0rem;background-color:rgb(141, 211, 228);color:black;width:100%;margin-left:auto;margin-right:autp;max-width:initial">
+<div class="columns large-2" style="margin-left:27.0rem">
+<span>User: <span class="nameSet"></span></span>
+</div>
+<div class="columns large-2" style="margin-left:-12.0rem">
+<span>Credit: $0.00</span>
+</div>
+<div class="columns large-1" style="margin-left:-4.0rem">
+<a href="/" style="color:black">Home</a>
+</div>
+<div class="columns large-1" style="margin-left:-2.0rem">
+<a href="/MyAccount.html" style="color:black">Profile</a>
+</div>
+<div class="columns large-2" style="margin-left:-2.0rem">
+<a href="/Referrals.html" style="color:black">Referrals</a>
+</div>
+<div class="columns large-2" style="margin-left:-10.0rem">
+<a href="/MyAccount.html" style="color:black">Account</a>
+</div>
+<div class="columns large-2" style="margin-left:-50.0rem">
+<a href="/SignOut.html" style="color:black;margin-left:-9.0rem">Sign Out</a>
+</div>
+</div>
+
+<div class="row" style="margin-left:29.0rem">
+<div class="large-6 columns"><h5>Customer, Where do want your Fan Box delivered?</h5></div>
+</div>
+<br>
+<div class="panel callout radius" style="margin-left:30rem;width: 910px;">
+<h5 style="border-bottom: 1px dotted #000; text-decoration: none;">Shipping Address</h5>
+<div class="row">
+<p>First Name</p>
+<div class="large-12 columns"><input type="text" value=""/></div>
+</div>
+<div class="row">
+<p>Last Name</p>
+<div class="large-12 columns"><input type="text" value=""/></div>
+</div>
+<div class="row">
+<p>Address</p>
+<div class="large-12 columns"><input type="text" value=""/></div>
+</div>
+<div class="row">
+<p>Zip Code</p>
+<div class="large-12 columns"><input type="text" value=""/></div>
+</div>
+<div class="row">
+<div class="large-12 columns" border-bottom: 1px dotted #000; text-decoration: none;>Billing Address</div>
+</div>
+<div class="row">
+<div class="large-16 columns"><input type="checkbox" name="billing" value="billing" checked>Same as Shipping Address.</div>
+</div>
+
+
+<div class="row">
+<p style="border-bottom: 1px dashed #999;text-decoration: none;">Promo Code</p>
+<div class="large-8 columns"><input type="text" value=""/></div>
+<div class="medium-4 columns"><input type="Button" value="Apply"/></div>
+</div>
+<div class="row">
+<p style="border-bottom: 1px dashed #999;text-decoration: none;">Payment Info</p>
+<p>Credit Card Number</p>
+<div class="large-12 columns"><input type="text" value=""/></div>
+</div>
+<div class="row">
+<p>Expiration Date</p>
+<div class="large-8 columns"><input type="text" value=""/></div>
+<div class="medium-4 columns"><input id="submitToConfirm" type="Button" value="Submit"/></div>
+</div>
+</div>
